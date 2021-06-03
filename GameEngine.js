@@ -19,7 +19,7 @@ function preload() {
 
 
 /**
- * Initialize the game engine by creating the necessary objects and instances  of
+ * Initialize the game engine by creating the necessary objects and instances of
  * the board and AIs  
  */
 

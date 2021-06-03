@@ -61,23 +61,6 @@ class AI1 {
     }
 
 
-
-    //At each mine updated the knowledge
-    /**
-        @----: when deciding what sqaure to mine based on knowledge add +1 for each U square + the U square value
-        @TODO: always preferr to mine safe saqures
-                    - choose highest knowledge sum
-                    - if tie: choses highest explorative knoledge
-
-                    or
-
-                    - prefer risk knowledge (when tie EK) and when risk > (&=? : prolly) explorativeK -> bomb
-
-
-        @TODO: know when a x-U square is a bomb when x > than the # of unmined saqures around
-    **/
-
-
     /**
      * Function called whenever a new square is mined that integrates the new knowledge given by the board
      * after mining a square, start the procedures needed to update all the knowledge maps and compute the next move.
@@ -110,6 +93,7 @@ class AI1 {
 
         this.updateProcedure();
     }
+
 
     /**
      * Execute the update steps needed
@@ -160,6 +144,7 @@ class AI1 {
             }
         }
     }
+
 
     /**
      * Update the knowledge maps related to the square flags and risk scores
@@ -313,6 +298,7 @@ class AI1 {
             print("     AI-1 > Knowledge gain map updated");
     }
 
+
     /**
      * This function checks each 'U' square, if the risk value >= explorative knowledge gain then the square is a bomb
      */
@@ -439,6 +425,7 @@ class AI1 {
         }
     }
 
+    
     /**
      * Automatically play the next move if "Play Game" was selected
      * @param {boolean} isLooping indicates if AI1 is playing the game
