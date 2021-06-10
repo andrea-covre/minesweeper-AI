@@ -90,7 +90,6 @@ class AI1 {
             this.knowledge[y][x][0] = mined;
             this.knowledge[y][x][1] = "M";     //marking the cell as mined
         }
-
         this.updateProcedure();
     }
 
@@ -366,7 +365,7 @@ class AI1 {
      *          - Gray      -> mined
      *          - Green     -> safe square
      *          - Yellow    -> risky square
-     *          - Red       -> very risky square, or sqaure  with no knowledge available about it  
+     *          - Red       -> very risky square, or square  with no knowledge available about it  
      *          - Violet    -> square where a bomb has been identified 
      * 
      *      - Squares data in format: [square risk value]-[flag]
@@ -428,13 +427,12 @@ class AI1 {
     
     /**
      * Automatically play the next move if "Play Game" was selected
-     * @param {boolean} isLooping indicates if AI1 is playing the game
+     * @param {boolean} isPlaying indicates if AI1 is playing the game
      */
 
-    playNext(isLooping) {
-        if (isLooping) {
+    playNext(isPlaying) {
+        if (isPlaying) {
             board.mine(ai1.nextMove[1], ai1.nextMove[0]);
         }
-
     }
 }
