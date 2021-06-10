@@ -66,12 +66,11 @@ accurate position of the bomb.
 If the AI has no leads to follow, it will then switch to explorative behavior and select the safe squares with the highest knowledge
 gain, so to maximize the knowledge gain for the next update.
 
-<br>
 
 ## Demo
 
 The animation below comes from running the algorithm on 10x10 board with 10% bomb density. The AI manages
-to complete and win the game in 51 moves, opening 51% of the board's squares
+to complete and win the game in 51 moves, opening 51% of the board's squares.
 
 ![Animation of the AI playing and winning the game](/figures/animated-ai-board-view.gif "AI playing and winning the game")
 
@@ -82,29 +81,20 @@ to complete and win the game in 51 moves, opening 51% of the board's squares
   - Red       -> very risky square, or square  with no knowledge available about it  
   - Violet    -> square where a bomb has been identified 
 
-<br>
 
 ## Files
 
 ### index.html
 Sets the web scene for the JavaScript elements to run and imports all the necessary libraries and files.
 
-<br>
-
 ### GameEngine.js
 This game engine manages the interactions between the User, the board and the AI, in addition to handling the end of the game and the possibility to reset the board and AI.
-
-<br>
 
 ### Graphics.js
 This file contains values and functions utilized to create and manage the graphical elements that showcase the board, the AI view of the board, stats and controls.
 
-<br>
-
 ### Board.js
 This file contains the class that represents the board. It reads and parses the board's properties from a JSON object. The class also contains functions that handle the mining of squares, keep track of the number of accesses, setup and manage the board's graphics, verify the correctness of the AI's inferred bombs position, and reveal the values of the non-mined squares (for debugging purposes).
-
-<br>
 
 ### AI-1.js
 This file contains the AI's class and relative methods. The AI object only requires the dimensions of the board,
@@ -143,8 +133,6 @@ update(x, y, mined) {
 ```
 `update()` is called by GameEngine and tells the AI what square has been mined and what is its value (the coordinates of the mined 
 square are not always known by the AI and cannot be assumed to be the same as the AI selected next move since the game can be intermittently played manually). After recording the new value, the AI will proceed to update its maps by calling `updateProcedure()`. 
-
-<br>
 
 ## Execution
 
