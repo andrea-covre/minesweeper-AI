@@ -69,7 +69,7 @@ gain, so to maximize the knowledge gain for the next update.
 
 ## Demo
 
-The animation below comes from running the algorithm on 10x10 board with 10% bomb density. The AI manages
+The animation below comes from running the algorithm on a 10x10 board with 10% bomb density. The AI manages
 to complete and win the game in 51 moves, opening 51% of the board's squares.
 
 <img src="/figures/animated-ai-board-view.gif" width="650" alt="Animation of the AI playing and winning the game">
