@@ -79,7 +79,7 @@ to complete and win the game in 51 moves, opening 51% of the board's squares.
   - Green     -> safe square
   - Yellow    -> risky square
   - Red       -> very risky square, or square  with no knowledge available about it  
-  - Violet    -> square where a bomb has been identified 
+  - Black    -> square where a bomb has been identified 
 
 
 ## Files
