@@ -140,7 +140,7 @@ The code can be run locally by installing an npm package like live server:
 ```
 npm install -g live-server
 ```
-and then executed from this directory with:
+and then executed from the root directory with:
 ```
 live-server --port=8000
 ```
